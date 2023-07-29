@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #494542;
+}
+body{
+    margin: 1em;
+    background-color: #c9dee5;
+}
+.container{
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.gore{
+    display: flex;
+    flex-direction: row;
+    height: 45%;
+}
+.div_za_formu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    border: solid #494542 thick;
+    border-radius: 0.5em;
+    justify-content: space-around;
+}
+.dole{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prikaz_podataka{
+    height: 100%;
+    width: 70%;
+    overflow: scroll;
+}
+.update{
+    height: 100%;
+    width: 25%;
+}
+form p{
+    padding: 0.75em;
+    display: flex;
+    justify-content: space-between;
+}
+form p input{
+    border-radius: 0.5em;
+    background-color: #ecf5f6;
+    padding: 0.3em;
+}
+button{
+    display: flex;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 0.5em;
+    text-align: center;
+    border: solid #494542 thin;
+}
+.div_za_gresku{
+    margin-left: 1em;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+span{
+    display: none;
+    padding:0.5em;
+    color: red;
+    font-weight: bold;
+    border: red solid thick;
+    border-radius: 0.5em;
+    margin: 0.25em;
+
+}
+.div_za_timer{
+    display: none;
+    flex-direction: column;
+    width: 45%;
+    height: 70%;
+    background-color: #494542;
+    color: white;
+    justify-content: space-between;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-left: 1em;
+    align-self: center;
+}
+.izracunaj{
+    font-size: 3em;
+    height: 60%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.tajmer{
+    width: 100%;
+    border-radius: 1em;
+    height: 50%;
+    background-color: rgb(173, 0, 0);
+}
+.forma_za_jednacinu{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rezultat{
+    font-size: 1.3em;
+    border-radius: 0.5em;
+    width: 30%;
+} 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.dugme_za_jednacinu{
+    font-size: 0.5em;
+    font-weight: bolder;
+    border-radius: 0.5em;
+    height: 100px;
+    width: 20%;
+}
+.forma_za_update{
+    border: solid #494542 thick; 
+    border-radius: 0.5em;
+}
+.vidljivo{
+    display: block;
+}
+.vidljivo_flex{
+    display: flex;
+}
+.nevidljivo{
+    display: none;
+}
+

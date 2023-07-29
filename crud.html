@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS projekat</title>
+    <link rel="stylesheet" href="css/crud.css">
+    <script src="js/crud.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="gore">
+            <div class="div_za_formu">
+                <form action="" id="forma">
+                    <p>
+                        <label for="id">ID:</label>
+                        <input type="number" name="id", id="idd">
+                    </p>
+                    <p>
+                        <label for="ime_prezime">Ime i prezime:</label>
+                        <input type="text" name="ime_prezime", id="ime_prezime">
+                    </p>
+                    <p>
+                        <label for="godina_rodjenja">Godina rodjenja:</label>
+                        <input type="number" name="godina_rodjenja", id="godina_rodjenja">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email">
+                    </p>
+                    <p>
+                        Vrsta clana:
+                        <label for="vrsta_clana">Regularni</label>
+                        <input type="radio" name="vrsta_clana" value="regularni" checked>
+                        <label for="vrsta_clana">Povlasceni</label>
+                        <input type="radio" name="vrsta_clana"  value="povlasceni">
+                    </p>
+                    <p>
+                        <button id="dugme_dodaj_clana">Posalji formu</button>
+                    </p>
+                </form>
+            </div>
+            <div class="div_za_gresku" id="div_za_gresku">
+                <span class="popunjavanje_greska" id="popunjavanje_greska">
+                    Nisu popunjena sva polja, pokusajte ponovo
+                </span>
+                <span class="id_greska" id="id_greska">
+                    ID vec postoji, pokusaj ponovo
+                </span>
+                <span class="ime_prezime_greska" id="ime_prezime_greska">
+                    Ime i prezime mora sadrzati makar dve reci, pokusaj ponovo
+                </span>
+                <span class="godina_rodjenja_greska" id="godina_rodjenja_greska">
+                    Godina rodjenja ne sme biti veca od 2023. ili negativna, pokusaj ponovo
+                </span>
+                <span class="email_greska" id="email_greska">
+                    Email mora sadrzati @ u sebi, pokusaj ponovo
+                </span>
+                <span id="jednacina_greska" class="jednacina_greska">
+                    Netačan odgovor, pokusaj ponovo
+                </span>
+            </div>
+            <div class="div_za_timer" id="div_za_timer">
+                <div class="izracunaj" id="izracunaj">
+                    
+                </div>
+                <div class="tajmer" id="tajmer">
+
+                </div>
+            </div>
+        </div>
+        <div class="dole">
+            <div class="prikaz_podataka">
+                <table id="tabela">
+                    <tr>
+                        <th>ID</th>
+                        <th>IME PREZIME</th>
+                        <th>GODINA RODJENJA</th>
+                        <th>EMAIL</th>
+                        <th>VRSTA CLANA</th>
+                        <th>CLANARINA</th>
+                        <th colspan="2">OPCIJE</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="update" id="update">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
